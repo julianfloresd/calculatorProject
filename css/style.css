@@ -5,14 +5,69 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  color: gainsboro;
+  font-family: 'Barlow', sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+.container {
+  background: rgba( 188, 143, 143, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  padding: 8px;
+}
 
+.row {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.row-two {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px
+}
+
+button {
+  border-radius: 20%;
+  
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.number {
+  background-color: #574141;
+  flex-grow: 1;
+}
+
+.operator {
+  background-color: #6EA3A6;
+  flex-grow: 1;
+}
+
+#equal {
+  background-color: #3A6F73;
+  flex-grow: 2.5;
+}
+
+.display {
+  background-color: #A47E8B;
+  font-size: xx-large;
+  text-align: end;
+  border-radius: 8px;
+}
