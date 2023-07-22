@@ -7,11 +7,15 @@
   box-sizing: border-box;
   color: gainsboro;
   font-family: 'Barlow', sans-serif;
+  font-weight: bold;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  background-color: blanchedalmond;
+}
 
 .container {
   background: rgba( 188, 143, 143, 0.6 );
@@ -20,13 +24,13 @@
   -webkit-backdrop-filter: blur( 3.5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   display: flex;
-  align-items: stretch;
   justify-content: space-around;
   flex-flow: column wrap;
   padding: 8px;
+  margin: auto;
 }
 
 .row {
@@ -42,32 +46,54 @@
 }
 
 button {
-  border-radius: 20%;
-  
+  border-radius: 16px;
+  border: 1px outset rgba( 255, 255, 255, 0.18 );
+  padding: 8px 0;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.number {
+h1 {
+  color: #574141;
+  text-align: center;
+}
+
+.number, .float{
   background-color: #574141;
-  flex-grow: 1;
 }
 
-.operator {
+.operator, .backSpace {
   background-color: #6EA3A6;
-  flex-grow: 1;
 }
 
-#equal {
+#equal, #reset {
   background-color: #3A6F73;
-  flex-grow: 2.5;
+  flex-grow: 2.5
+}
+
+.operator, .backSpace, .number, .float {
+  flex-grow: 1;
 }
 
 .display {
   background-color: #A47E8B;
-  font-size: xx-large;
+  height: 70px;
   text-align: end;
   border-radius: 8px;
+}
+
+.previousInput {
+  font-size: large;
+}
+
+.currentInput {
+  font-size: xx-large;
+  position: relative;
+  bottom: 0;
+}
+
+button:hover {
+  scale: 1.08;
 }
