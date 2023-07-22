@@ -104,10 +104,10 @@ function operate (operator, previousNumber, currentNumber) {
   } else if (operator == '-') {
     ans = subtract(previousNumber, currentNumber);
     return ans;
-  } else if (operator == '-') {
+  } else if (operator == '*') {
     ans = multiply(previousNumber, currentNumber);
     return ans;
-  } else if (operator == '-') {
+  } else if (operator == '/') {
     ans = divide(previousNumber, currentNumber);
     return ans;
   } else {
